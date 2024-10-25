@@ -1,6 +1,6 @@
 <script setup>
-import Card from './Card.vue'
-import Subscribe from './Subscribe.vue';
+import MailingCardItem from './MailingCardItem.vue'
+import SubscribeInput from './SubscribeInput.vue';
 </script>
 
 <template>
@@ -9,10 +9,10 @@ import Subscribe from './Subscribe.vue';
       <h2 class="text-2xl md:text-center pb-6 font-medium">
         Выберите рассылки, которые подходят именно вам
       </h2>
-      <Subscribe />
+      <SubscribeInput />
     </div>
     <article class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 px-6 pb-12 pt-2 ">
-      <Card 
+      <MailingCardItem
         title="Утренний бухгалтер"
         subtitle="Перед рассветом" 
         desc="Самые важные новости и события за день. Кратко, по делу, структурировано."
@@ -21,7 +21,7 @@ import Subscribe from './Subscribe.vue';
         :list="['Новости для бухгалтеров, ИП и директора', 'Подборка статей за день']"
         />
 
-      <Card 
+      <MailingCardItem
         title="Ночной бухгалтер"
         subtitle="Перед закатом" 
         desc="Самая краткая газета о налогах и бухучете в мире — современная рассылка для чтения."
@@ -30,7 +30,7 @@ import Subscribe from './Subscribe.vue';
         :list="['Анализ, оценка и только самое главное', 'Лучшие комменты юзеров в обзоре']"
         />
 
-      <Card 
+      <MailingCardItem
         title="Ножницы скидок"
         subtitle="Раз в две недели" 
         desc="Подборка самых выгодных и полезных спецпредложений от надежных компаний."
@@ -39,7 +39,7 @@ import Subscribe from './Subscribe.vue';
         :list="['Акции и скидки от лидеров рынка', 'Те, кто подписался – экономят много денег' ]"
         />
 
-        <Card 
+        <MailingCardItem
           title="Чемодан вебинаров"
           subtitle="По мере появления анонсов" 
           desc="Подборка с анонсами бесплатных вебинаров на самые топовые темы при участии экспертов."

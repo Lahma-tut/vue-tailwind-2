@@ -1,20 +1,12 @@
-<script setup>
-import { ref } from 'vue'
-
-</script>
-
 <template>
   <div class="subscribe">
     <div class="w-full relative">
       <div class="relative">
         <input type="email"
-          class="w-full
-                placeholder:text-gray-500
+          class="w-full placeholder:text-gray-500
                 text-gray-700 text-sm
-                rounded-tl-lg
-                rounded-tr-3xl
-                rounded-bl-lg
-                rounded-br-3xl
+                rounded-tl-lg rounded-tr-3xl
+                rounded-bl-lg rounded-br-3xl
                 pl-4 pr-20 py-4 
                 transition duration-300 ease 
                 focus:outline-none focus:border-slate-400 
@@ -51,7 +43,7 @@ import { ref } from 'vue'
       </div>
     </div>
 
-    <div class="subscribe-switch">
+    <div class="flex gap-2 items-center pt-4">
       <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
@@ -62,13 +54,6 @@ import { ref } from 'vue'
 </template>
 
 <style scoped>
-
-.subscribe-switch {
-  padding: 16px 0 0 2px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 
 /*   switch - the box around the slider  */
 .switch {
